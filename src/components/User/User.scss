@@ -1,0 +1,143 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(203, 203, 203, 0.045);
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+
+    .avatar {
+      height: 52px;
+      width: 52px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      background: linear-gradient(180deg, #7faaff 0%, #6762ff 100%);
+    }
+
+    .user-detail {
+      margin-left: 10px;
+      line-height: 0;
+
+      .new-message {
+        color: #707579;
+      }
+    }
+  }
+
+  .online,
+  .offline {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    left: -13px;
+    z-index: 1;
+    margin-top: 35px;
+  }
+
+  .offline {
+    background-color: transparent;
+  }
+
+  .unread {
+    position: relative;
+    top: -22px;
+
+    .checked {
+      position: relative;
+      top: 15px;
+      left: -18px;
+      path {
+        fill: #ffffff;
+      }
+    }
+
+    .notChecked {
+      position: relative;
+      top: 26px;
+      left: -38px;
+    }
+
+    .none {
+      path {
+        fill: transparent;
+      }
+    }
+  }
+
+  .new {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: #8774e1;
+    position: fixed;
+    margin-top: 6px;
+    margin-left: 15px;
+  }
+
+  .new-selected {
+    background-color: #ffffff;
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    margin-left: 35px;
+    border-radius: 50%;
+  }
+
+  .new-selected:first-child {
+    background-color: none;
+  }
+
+  .timeline {
+    font-size: 12px;
+    position: relative;
+    left: -15px;
+  }
+
+  .timeline-selected {
+    font-size: 12px;
+    position: relative;
+    left: -15px;
+    top: 11px;
+  }
+
+  .timeline-user {
+    font-size: 12px;
+    position: relative;
+    left: -15px;
+    top: 13px;
+  }
+}
+
+.selected-user {
+  background-color: #8774e1;
+
+  &:hover {
+    background-color: #8774e1;
+  }
+
+  .user-info {
+    .user-detail {
+      .new-message {
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.categories {
+  background-color: #212121;
+
+  .chat-categories {
+    width: 100%;
+    padding-top: 1.75rem;
+    margin-left: 1.4rem;
+
+    .chat-category {
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+
+    .active {
+      border-bottom: 3px solid #8774e1;
+
+      padding-bottom: 14px;
+      color: #8774e1;
+    }
+    padding-bottom: 16px;
+  }
+  .chat-divider {
+    height: 1px;
+    background-color: black;
+
+    width: 100%;
+  }
+}

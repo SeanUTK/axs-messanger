@@ -1,0 +1,83 @@
+.messages-box {
+  .message-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+
+    .message-input {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-color: #212121;
+      border-radius: 15px 15px 0 15px;
+      margin-right: 10px;
+      margin-top: 5px;
+      padding: 0 15px;
+
+      .input-field {
+        display: flex;
+        align-items: center;
+        input {
+          border: none;
+          background-color: #212121;
+          height: 50px;
+          font-size: 18px;
+          caret-color: #8774e1;
+          color: #ffffff;
+          outline: none;
+          width: 100%;
+          padding-left: 20px;
+          max-inline-size: 95%;
+          overflow-wrap: break-word;
+
+          &::placeholder {
+            color: #aaaaaa;
+          }
+        }
+
+        .smiley {
+          height: 27px;
+          width: 27px;
+
+          circle,
+          path {
+            stroke: #aaaaaa;
+          }
+        }
+      }
+    }
+  }
+
+  .img-input {
+    display: flex;
+    align-items: center;
+
+    .paperclip {
+      height: 27px;
+      width: 27px;
+
+      path {
+        stroke: #aaaaaa;
+      }
+    }
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #8774e1;
+    position: relative;
+    top: 6px;
+
+    .send {
+      height: 25px;
+      padding-left: 4px;
+      width: 25px;
+    }
+  }
+}

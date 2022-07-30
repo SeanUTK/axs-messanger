@@ -1,0 +1,43 @@
+.left {
+  background-color: #212121;
+  padding: 5px 10px;
+  border-radius: 10px 10px 10px 0;
+  margin: 5px 0;
+  max-inline-size: 70%;
+  overflow-wrap: break-word;
+}
+
+.right {
+  background-color: #8774e1;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 10px 10px 0 10px;
+  max-inline-size: 70%;
+  overflow-wrap: break-word;
+}
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 57.5px;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timeline {
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.check {
+  fill: #fff;
+  position: relative;
+  top: -3px;
+  left: 2px;
+  z-index: 1;
+  height: 18px;
+}

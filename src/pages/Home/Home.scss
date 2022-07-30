@@ -1,0 +1,26 @@
+.home {
+  max-width: 105rem;
+  margin: auto;
+  .home-container {
+    display: grid;
+    grid-template-columns: 418px auto;
+    background-color: #212121;
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      .Chatbox {
+        display: none;
+      }
+    }
+  }
+
+  .ChatBoxContainer {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #212121;
+
+    .UserSide {
+      display: none;
+    }
+  }
+}
